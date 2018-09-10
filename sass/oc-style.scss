@@ -11,4 +11,37 @@ $verde-claro: #6eb7a6;
     box-sizing: border-box;
     font-family: 'Avenir Next LT Pro Regular';
     font-weight: 500;
+    font-size: 16px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    li{
+        background-color: lightgrey;
+    }
+    a{
+        display: inline-block;
+        padding: 0.5em;
+        width: 100%;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    a:hover{
+        background-color: rgb(216, 216, 216);
+    }
+}
+
+
+.hide{
+    display: none;
 }
