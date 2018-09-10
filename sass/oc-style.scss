@@ -19,14 +19,44 @@ body{
     padding: 0;
 }
 
+header{
+    height: 3em;
+}
+
+#ham-button{
+    border: none;
+    height: 2em;
+    width: 2em;
+    background: url('../img/hamburger_icon.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0.7em;
+    @media screen and (min-width:500px){
+        display:none;
+    }
+}
+
+
 nav {
+    @media screen and (min-width:500px){
+        display:block!important;
+    }
     ul{
         list-style: none;
         margin: 0;
         padding: 0;
+        @media screen and (min-width:500px){
+            display:inline-block;
+            float:right
+        }
     }
     li{
         background-color: lightgrey;
+        z-index:1;
+        position:relative;  
+        @media screen and (min-width:500px){
+            display:inline-block;
+        }
     }
     a{
         display: inline-block;

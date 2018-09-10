@@ -1,4 +1,7 @@
 
 document.querySelector("#ham-button").addEventListener('click',function(){
-    document.querySelector("nav").classList.toggle("hide");
+    let menu = document.querySelector("nav");
+    menu.classList.toggle("hide");
+    /*menu.setAttribute("style","display:none");*/
+    console.log(menu.style.display)
 });
